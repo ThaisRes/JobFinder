@@ -1,5 +1,5 @@
-const seuelize = require('sequelize');
-const db = require('../db/connection');
+const Sequelize = require('sequelize');
+const db = require('../db/conection');
 
 //usaremos o método define do sequelize para criar o model
 //passar todas as propriedades do objeto, se faltar algum o banco não será lido corretamente

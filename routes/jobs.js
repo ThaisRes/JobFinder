@@ -1,14 +1,14 @@
 const express = require('express');
-const routes = express.Router();
+const router = express.Router();
 const Job = require('../models/Job');
 
 //para testar
-Router.get('/test',(req,res) => {
+router.get('/test',(req,res) => {
     res.send('deu certo')
 });                     //no terminal>npm run dev ; abra o postman>get>localhost:3000/jobs/test
 
 //add job via post
-Router.post('/add',(req,res) =>{
+router.post('/add',(req,res) =>{
     let{title,salary,company,description, email, new_job} = req.body;
 
     //insert

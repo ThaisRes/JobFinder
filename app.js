@@ -31,5 +31,5 @@ db
 
 //Routes
 app.get('/',(req,res)=>{
-    res.send('Está funcionando');
+    res.send('Está funcionando 3 -Home');
 })
